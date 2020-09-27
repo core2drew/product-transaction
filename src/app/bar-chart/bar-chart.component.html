@@ -1,0 +1,8 @@
+<div class="bar-chart-container">
+  <div class="bar-chart">
+    <div class="bar" [ngStyle]="{ 'width.%': value }">
+      <span class="tooltip">{{ value }}</span>
+    </div>
+  </div>
+  <label>{{ description }}</label>
+</div>

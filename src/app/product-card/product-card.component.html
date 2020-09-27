@@ -1,0 +1,24 @@
+<app-card headerTitle="Product Recommender">
+  <div class="content">
+    <div class="bike-image-container">
+      <img [src]="selectedImage" />
+      <app-bar-chart
+        [value]="propensityValue"
+        class="bar-chart"
+        description="Propensity to purchase"
+      ></app-bar-chart>
+    </div>
+    <div class="bike-details-container">
+      <h2 class="name">The Fix Mens Bike</h2>
+      <p class="price">$250 <small>00</small></p>
+      <app-select-field label="Size" [items]="sizes"></app-select-field>
+      <app-image-option
+        label="Color"
+        [selectedIndex]="selectedIndex"
+        class="image-option"
+        [items]="prepareThumbNails()"
+        (onClick)="handleOnClickImageOption($event)"
+      ></app-image-option>
+    </div>
+  </div>
+</app-card>

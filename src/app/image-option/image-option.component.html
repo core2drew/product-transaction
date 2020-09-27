@@ -1,0 +1,10 @@
+<label>{{ label }}</label>
+<div class="container">
+  <span
+    class="option"
+    *ngFor="let item of items; index as i"
+    [ngClass]="{ active: selectedIndex === i }"
+  >
+    <img (click)="handleOnClick(i)" [src]="item" />
+  </span>
+</div>

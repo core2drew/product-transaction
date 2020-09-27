@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.image-option {
+  margin-top: 10px;
+  display: block;
+}
+
+.bike-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bar-chart {
+    display: block;
+    min-width: 200px;
+  }
+}
+
+.price {
+  display: flex;
+  font-size: 21px;
+}
+
+.bike-details-container {
+  .price {
+    display: flex;
+    font-size: 21px;
+  }
+  .price small {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+}

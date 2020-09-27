@@ -1,0 +1,52 @@
+.bar-chart {
+  max-width: 200px;
+  background-color: #f0f0f0;
+}
+
+.bar {
+  transition: width 0.3s;
+  background-image: linear-gradient(to right, #05b1ff, #84dff9);
+  position: relative;
+  max-width: 100%;
+}
+
+.bar-chart,
+.bar {
+  height: 15px;
+  border-radius: 40px;
+}
+
+.bar:hover {
+  > .tooltip {
+    display: flex;
+  }
+}
+
+label {
+  font-style: italic;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.tooltip {
+  background: #fff;
+  position: absolute;
+  right: -18px;
+  top: -50px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  display: none;
+  justify-content: center;
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 10px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: -10px;
+    filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.3));
+  }
+}

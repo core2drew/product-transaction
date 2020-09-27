@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.option {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  max-width: 35px;
+  max-height: 35px;
+  cursor: pointer;
+  &:nth-child(n + 2) {
+    margin-left: 5px;
+  }
+  > img {
+    height: 35px;
+    width: 35px;
+  }
+  &.active {
+    border-color: #5dadff;
+  }
+}
+
+label {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
